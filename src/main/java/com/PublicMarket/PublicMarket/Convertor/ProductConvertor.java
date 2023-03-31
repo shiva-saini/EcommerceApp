@@ -14,7 +14,8 @@ public class ProductConvertor {
     @Autowired
     SellerRepository sellerRepository;
     public static Product productRequestDtoToProduct(ProductRequestDto productRequestDto){
-        return  Product.builder().name(productRequestDto.getName())
+        return  Product.builder().
+                 productName(productRequestDto.getProductName())
                 .price(productRequestDto.getPrice())
                 .quantity(productRequestDto.getQuantity())
                 .productStatus(ProductStatus.AVAILABLE)
@@ -26,7 +27,7 @@ public class ProductConvertor {
     public static ProductResponseDto productToProductResponseDto(Product product){
         return ProductResponseDto.builder()
                 .price(product.getPrice())
-                .name(product.getName())
+                .productName(product.getProductName())
                 .quantity(product.getQuantity())
                 .productStatus(product.getProductStatus())
                 .build();

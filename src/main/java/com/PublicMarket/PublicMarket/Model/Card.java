@@ -3,6 +3,7 @@ package com.PublicMarket.PublicMarket.Model;
 import com.PublicMarket.PublicMarket.Enum.CardType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.query.sql.internal.ParameterRecognizerImpl;
@@ -10,6 +11,7 @@ import org.hibernate.query.sql.internal.ParameterRecognizerImpl;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 @Entity
 @Table(name="card")
 public class Card {

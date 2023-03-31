@@ -1,19 +1,18 @@
 package com.PublicMarket.PublicMarket.ResponseDto;
 
-import com.PublicMarket.PublicMarket.Enum.ProductStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
+@NoArgsConstructor
 @Builder
-public class ProductResponseDto {
-    private int price;
+
+public class CartResponseDto {
     private String productName;
-    private int quantity;
-    private ProductStatus productStatus;
+    private int productPrice;
+    private int requiredQuantity;
 
 }

@@ -1,6 +1,6 @@
 package com.PublicMarket.PublicMarket.ResponseDto;
 
-import com.PublicMarket.PublicMarket.Enum.ProductStatus;
+import com.PublicMarket.PublicMarket.Enum.CardType;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,10 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class ProductResponseDto {
-    private int price;
-    private String productName;
-    private int quantity;
-    private ProductStatus productStatus;
-
+public class CardDto {
+    private String cardNo;
+    private CardType cardType;
 }
